@@ -65,6 +65,25 @@
         #date_f {
             margin-top:27px;
         }
+        .vertical_4 {
+            border-left:1px solid hsla(200, 10%, 50%,100);
+            width:1px;
+            height:400px;
+            margin-top:-10px;
+            margin-left:800px;
+        }
+        .bodyNav_2 {
+            margin-left:60%;
+        }
+        .hrLine_1 {
+            width:123%;
+            margin-left:-130px;
+        }
+        .hrLine_2 {
+            width:123%;
+            margin-left:-130px;
+            margin-top:-10px;
+        }
     </style>
 </head>
 <body>
@@ -130,6 +149,11 @@
 
     <hr style="width:95%">
     <hr style="width:95%;margin-top:-10px">
+
+    <div class="content container">
+        {% block content %}
+        {% endblock %}
+    </div>
 
 
 
