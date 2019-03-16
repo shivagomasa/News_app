@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Newsapp</title>
+    <title>News</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            font-size:14px;
+        }
+        .page-header {
+            margin-top:20px;
+        }
+        .brand_name {
+            margin-top:6px;
+            margin-left:38px;
+        }
+        .header_content_2 {
+            text-align:right;
+            margin-right:30px;
+            margin-top:10px;
+        }
+        .header_content_2 a {
+            font-size:10px;
+        }
+        .search_query {
+            border-radius:20px;
+            padding:1px 10px 6px 10px;
+        }
+        .sub_nav {
+            margin-left:8%;
+        }
+        .sub_nav a {
+            margin-left:40px;
+            text-decoration:none;
+            color:black;
+        }
+    </style>
 </head>
 <body>
-    <h2>Hello, World!</h2>
+    <div class="page_header">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="brand_name">
+                    <h2>Snappi News</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="header_content_2">
+                    <a href="/" class="btn btn-success">SUBSCRIBE</a>
+                    <a href="/" class="btn btn-success">LOGIN</a>
+                    <input type="search" class="search_query">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width:95%;margin-top:15px">
+    <div class="row">
+        <div class="sub_nav">
+            <div class="col-md-12">
+                <a href="/">India</a>
+                <a href="/">World</a>
+                <a href="/">Politics</a>
+                <a href="/">Regional</a>
+                <a href="/">Business</a>
+                <a href="/">Travel</a>
+                <a href="/">Tech</a>
+                <a href="/">Magazine</a>
+                <a href="/">Health</a>
+                <a href="/">Food</a>
+                <a href="/">Sports</a>
+                <a href="/">Science</a>
+                <a href="/">Style</a>
+            </div>
+        </div>
+    </div>
+    <hr style="width:95%;">
 </body>
-</html>
