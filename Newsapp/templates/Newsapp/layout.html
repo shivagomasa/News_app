@@ -38,6 +38,33 @@
             text-decoration:none;
             color:black;
         }
+        .body_nav {
+            margin-left:90px;
+        }
+        .vertical_1{
+            border-left:1px solid hsla(200, 10%, 50%,100);
+            width:1px;
+            height:90px;
+            margin-left:160px;
+            margin-top:-65px;
+        }
+        .vertical_3 {
+            border-left:1px solid hsla(200, 10%, 50%,100);
+            width:1px;
+            height:90px;
+            margin-top:-40px;
+            margin-left:106%;
+        }
+        .vertical_2 {
+            border-left:1px solid hsla(200, 10%, 50%,100);
+            width:1px;
+            height:90px;
+            margin-top:-40px;
+            margin-left:80%;
+        }
+        #date_f {
+            margin-top:27px;
+        }
     </style>
 </head>
 <body>
@@ -79,4 +106,35 @@
         </div>
     </div>
     <hr style="width:95%;">
+    <div class="body_nav">
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <p id="date_f"></p>
+                </div>
+                <div class="vertical_1"></div>
+            </div>
+            <div class="col-md-3">
+                <p>This is a Testing page</p>
+                <div class="vertical_2"></div>
+            </div>
+            <div class="col-md-3">
+                <p>This is a Testing page</p>
+                <div class="vertical_3"></div>
+            </div>
+            <div class="col-md-3">
+                <script type="text/javascript" src="https://darksky.net/widget/default-small/42.360082,-71.05888/us12/en.js?width=undefined&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&skyColor=333&fontFamily=Default&customFont=&units=us"></script>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:95%">
+    <hr style="width:95%;margin-top:-10px">
+
+
+
+    <script>
+        var d = new Date();
+        document.getElementById("date_f").innerHTML = d.toDateString();
+    </script>
 </body>
